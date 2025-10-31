@@ -1,12 +1,15 @@
 // src/main.jsx
 
-import './index.css'
-import App from './App.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Settings from './pages/Settings'
+
+
+// import './index.css'
+import App from './App.jsx'
+import Events from './pages/Events.jsx'
+import Home from './pages/Home.jsx'
+import Settings from './pages/Settings.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
