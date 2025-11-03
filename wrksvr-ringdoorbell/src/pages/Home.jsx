@@ -1,5 +1,4 @@
-// wrksvr-ringdoorbell/src/pages/Home.jsx
-
+// src/pages/Home.jsx
 import React, { useState, useEffect } from "react";
 import { getLatestImage } from "../api/backend.js";
 
@@ -16,26 +15,28 @@ export default function Home() {
       }
     };
 
-
     loadImage();
-
-    // Refresh the image every 5 seconds
     const interval = setInterval(loadImage, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="flex flex-col items-center gap-4">
-      <h2 className="text-2xl font-semibold">Live Doorbell Feed</h2>
-      {imageUrl ? (
-        <img
-          src={imageUrl}
-          alt="Latest snapshot"
-          className="rounded-xl shadow-lg max-w-md"
-        />
-      ) : (
-        <p>Loading latest image...</p>
-      )}
+    <div className="flex flex-col items-center text-center">
+      <h2 className="text-4xl font-semibold mb-8 text-gray-800">
+        Live Doorbell Feed
+      </h2>
+
+      <div className="bg-white shadow-xl rounded-2xl overflow-hidden p-4 w-full max-w-xl">
+        {imageUrl ? (
+          <img
+            src={imageUrl}
+            alt="Latest snapshot"
+            className="rounded-xl shadow-md w-full object-cover"
+          />
+        ) : (
+          <p className="text-gray-500">Loading latest image...</p>
+        )}
+      </div>
     </div>
   );
 }
