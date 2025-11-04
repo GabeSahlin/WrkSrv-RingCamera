@@ -20,6 +20,50 @@ MicroSD Card *OPTIONAL* : Store photo/video locally in case of error sending dat
 
 Resistors and Jumper Wires : Connect system
 
+# --- FINALIZED PART LIST ---
+
+Core Controller
+
+1. AEDIKO ESP32-CAM WiFi Bluetooth Board + ESP32-CAM-MB (CH340G) with OV2640 Camera
+Handles camera capture, WiFi, and programming via USB
+
+Storage
+
+2. PNY 32GB Elite Class 10 U1 microSDHC
+
+Local storage for images/videos
+Plug-and-play (FAT32 formatted, fully compatible with ESP32-CAM)
+
+Motion Detection
+
+3. HC-SR501 PIR Motion Sensor Detector (Infrared, 4.8–20V DC)
+Detects motion for camera trigger
+Adjustable sensitivity and delay
+
+Doorbell Trigger
+
+4. Momentary Push Button Switch (12V/24V Prewired, Adhesive Mount)
+Used as the actual doorbell button
+Simple pull-up/pull-down wiring to ESP32 GPIO
+
+Audio Feedback
+
+5. Tegg Passive Buzzer Module
+Provides audible feedback when button pressed or motion detected
+GPIO controlled (3.3V logic compatible)
+
+Door Status Sensor
+
+6. 2 Pack Magnetic Reed Switch NO/NC, Wired
+Detects door open/closed
+Connects to GPIO with pull-up/pull-down resistor
+
+Prototyping / Wiring
+
+7. Smraza Basic Starter Kit
+Includes breadboard, jumper wires, resistors, LEDs, buzzers, buttons, and extra prototyping components
+Provides all wiring/resistor/LED needs for your project
+
 ### Software
  - NOTE : VS Code PlatformIO extension support
 
