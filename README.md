@@ -1,6 +1,9 @@
 # Workstation & Server - Doorbell Camera and Web Application
 In my workstation and server IoT course, my semester project is to create my own doorbell camera to detect movement in front of the camera and detect when the door is open. Then, the data received will be sent to a web application built to display the captured data.
 
+##### Development notes for version control
+Ensure PlatformIO IDE extension is installed on laptop
+
 ## Project Outline Requirements
 
 ### Hardware
