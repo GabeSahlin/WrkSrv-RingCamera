@@ -81,6 +81,11 @@ Backend (Python) : Handle API and data transitions from/to frontend, database, a
  - ESP32 sends POST requests to backend on timer and events occur
  - Backend send POST/GET requests to database
 
+ ESP32 IDE (C++) : Handle Physical Device Logic
+ - NOTE : platformIO IDE on VScode
+ - Startup ESP32 intially
+ - Send and run the loop of constant operations
+
 
 Database (MySQL) *OPTIONAL* : Handle storing photo/video long term instead of only streaming the data
  - NOTE : implementing database will be kept in mind during     beginning implementation. If within scope of semester, complete database support and deploy into project.
