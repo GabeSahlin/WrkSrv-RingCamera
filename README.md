@@ -1,6 +1,9 @@
 # Workstation & Server - Doorbell Camera and Web Application
 In my workstation and server IoT course, my semester project is to create my own doorbell camera to detect movement in front of the camera and detect when the door is open. Then, the data received will be sent to a web application built to display the captured data.
 
+##### Development notes for version control
+Ensure PlatformIO IDE extension is installed on laptop
+
 ## Project Outline Requirements
 
 ### Hardware
@@ -77,6 +80,11 @@ Backend (Python) : Handle API and data transitions from/to frontend, database, a
  - NOTE : Flask or FastAPI to utilize /motion-events or /door-status
  - ESP32 sends POST requests to backend on timer and events occur
  - Backend send POST/GET requests to database
+
+ ESP32 IDE (C++) : Handle Physical Device Logic
+ - NOTE : platformIO IDE on VScode
+ - Startup ESP32 intially
+ - Send and run the loop of constant operations
 
 
 Database (MySQL) *OPTIONAL* : Handle storing photo/video long term instead of only streaming the data
