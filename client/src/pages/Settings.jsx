@@ -1,3 +1,4 @@
+// client/src/pages/Settings.jsx
 import React, { useState, useEffect } from "react";
 
 export default function Settings() {

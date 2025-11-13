@@ -1,6 +1,15 @@
 // wrksvr-ringdoorbell/src/api/backend.js
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
+// export const BASE_URL = localStorage.getItem("backendIP") || "http://192.168.56.1:8000";
+
+/*
+
+import axios from "axios";
+export const fetchEvents = async () => (await axios.get(`${BASE_URL}/events`)).data;
+export const fetchDeviceInfo = async () => (await axios.get(`${BASE_URL}/device`)).data;
+
+*/
 
 export const fetchEvents = async () => {
   // Return some fake events until backend exists
